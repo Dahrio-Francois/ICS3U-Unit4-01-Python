@@ -13,12 +13,13 @@ def main():
     calculation = 0
 
     # input
+    positive_integer = input("Enter in an integer: ")
     try:
-        positive_integer = int(input("Enter in an integer: "))
+        positive_integer_int = int(positive_integer)
 
         # process & output
         print("\n", end="")
-        while loop_counter <= positive_integer:
+        while loop_counter <= positive_integer_int:
             calculation = calculation + loop_counter
             loop_counter = loop_counter + 1
     except Exception:
